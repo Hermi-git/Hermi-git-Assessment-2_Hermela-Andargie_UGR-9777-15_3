@@ -1,0 +1,313 @@
+*{
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+}
+/* Apply this CSS to your header element */
+header {
+  background: linear-gradient(to right, #202920 15%, #3a4b3a 35%, #202920 50%);
+  padding: 20px;
+  color: white;
+  position: relative; 
+  z-index: 1; 
+  text-align: left;
+}
+.header h1 {
+  margin-left: 110px;
+  font-size: 40px;
+  padding-bottom: 32px;
+}
+
+.header span {
+  color: #ff9900;
+}
+
+.header p {
+  margin: 5px 0 0 224px;
+  font-size: 14px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 32;
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  background-color:#57c838;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px;
+}
+.navbar a:hover{
+  background-color: #ff9900;
+}
+a{
+  color: #53b538;
+}
+.main-content article a.first-link {
+    color: #ff9900; 
+}
+/* General Reset */
+body {
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Main Layout */
+main.content {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Main Content Section */
+section.main-content {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section.main-content article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+section.main-content article img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+section.main-content article h2 {
+  font-size: 1.5rem;
+  color: #57c838;
+  margin-bottom: 10px;
+}
+
+section.main-content article p {
+  margin-bottom: 10px;
+}
+
+section.main-content article a {
+  color: #57c838;
+  text-decoration: none;
+}
+
+section.main-content article a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Section */
+aside.sidebar {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .menu,
+.sidebar .sponsors {
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #57c838;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li h5 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.sidebar ul li p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main.content {
+    flex-direction: column;
+  }
+
+  section.main-content,
+  aside.sidebar {
+    flex: 1;
+  }
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #202920;
+    color: #fff;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    display: flex;
+    gap: 20px; 
+}
+
+.footer-section {
+    flex: 1;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    clear: both;
+    min-width: 250px; 
+    max-width: 33%; 
+    box-sizing: border-box; 
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+.footer-section a {
+  color: #57c838; 
+  text-decoration: none; 
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, max-content); 
+  gap: 4px;
+  justify-content: start;
+}
+
+.image-gallery img {
+  width: 56px;
+  height: 56px; 
+  margin: 0; 
+  padding: 8px; 
+  border: none; 
+}
+/* Styles for the last-section */
+.last-section {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #333; 
+  color: #ddd; 
+  padding: 20px 40px; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.last-section .copyright p {
+  margin: 0; 
+  font-size: 14px;
+}
+
+.copyright a {
+  color: #57c838;
+}
+
+.last-section .navigation ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  gap: 20px; 
+}
+
+.last-section .navigation li {
+  margin: 0;
+}
+
+.last-section .navigation a {
+  color: #ddd; 
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.last-section .navigation a:hover {
+  color: #57c838; 
+}
+/* About page css */
+.about-section h1, .mission-section h2 {
+    color: #4CAF50;
+}
+
+.about-section p, .mission-section p {
+    font-size: 16px;
+    color: #333;
+    margin: 16px;
+}
+
+.about-section p {
+    line-height: 1.6;
+}
+
+.mission-section p {
+    line-height: 1.6;
+} 
+.about-page .sidebar {
+  width: 25%;  
+  padding: 20px;  
+  margin-left: 10px;  
+}
+
+.about-page .main-content {
+  width: 70%; 
+}
+.about-footer {
+    position: relative;
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+
+.about-footer img {
+    float: left; 
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px; 
+}
+
+.about-footer p {
+    line-height: 1.6; 
+    text-align: justify;
+    margin: 0 0 10px 0; 
+}
+
+.about-footer a {
+    display: block; 
+    margin-top: 10px; 
+    color: #57c838; 
+}
